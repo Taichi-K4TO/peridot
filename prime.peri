@@ -1,0 +1,31 @@
+// Function for Judging Prime or Not
+func is_prime(n) 
+
+    return 0 ? n < 2 
+    return 1 ? n == 2 
+    return 0 ? n % 2 == 0
+
+    i = 3
+    while i * i <= n
+        if n % i == 0
+            return 0 
+        end
+        i = i + 2
+    end
+    return 1 
+end
+
+
+// Main Function
+func main()
+    print "Enter a positive integer >> "
+    k = input()
+    print "Result : "
+    for n = 1 to k
+        if is_prime(n)
+            print n, " "
+        end
+    end
+    println ""
+end
+
