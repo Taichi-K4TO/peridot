@@ -1,0 +1,77 @@
+// Declaration of Array (Global)
+var $d[9]
+
+
+// Main Function
+func main()
+    $d[0] = 30
+    $d[1] = 60
+    $d[2] = 50
+    $d[3] = 40
+    $d[4] = 90
+    $d[5] = 10
+    $d[6] = 70
+    $d[7] = 80
+    $d[8] = 20
+    $d[9] = 0
+
+
+    n = hogehoge
+    print "Before"
+    println ""
+    for i = 0 to 9
+        print i + 1, " : ", $d[i]
+        println ""
+    end
+    println ""
+
+    // Calling Function
+    quick_sort(0, 9)
+    print "After"
+    println ""
+    // Display Array Elements
+    for i = 0 to 9
+        print i + 1, " : ", $d[i]
+        println ""
+    end
+    println ""
+end
+
+
+// Function of Quick Sort
+func quick_sort(top, last)
+
+    key = $d[(top+last) \ 2]
+    i = top  - 1
+    j = last + 1
+
+    while 1
+        i = i + 1
+
+        while $d[i] < key
+            i = i + 1
+        end
+
+        j = j - 1
+        while $d[j] > key
+            j = j - 1
+        end
+
+        // Break Processing
+        break ? i >= j
+
+        // Swapping
+        wk = $d[i]
+        $d[i] = $d[j]
+        $d[j] = wk
+    end
+
+    if top < i - 1
+        quick_sort(top, i - 1) 
+    end
+    
+    if j + 1 < last
+        quick_sort(j + 1, last) 
+    end
+end
+
