@@ -16,7 +16,6 @@ func main()
     $d[9] = 0
 
 
-    n = hogehoge
     print "Before"
     println ""
     for i = 0 to 9

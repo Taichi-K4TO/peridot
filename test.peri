@@ -1,0 +1,11 @@
+println "this is test"
+
+$n = input()
+myfunc()
+
+func myfunc()
+    for i = 0 to $n
+    println i
+    end
+end
+end

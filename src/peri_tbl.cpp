@@ -107,4 +107,3 @@ vector<SymTbl>::iterator tableP(const CodeSet& cd) {
   if (cd.kind == Lvar) return Ltable.begin() + cd.symNbr;             /* Lvar */
   return Gtable.begin() + cd.symNbr;                            /* Gvar Fcall */
 }
-

@@ -1,0 +1,29 @@
+// Declaration of Array (Global)
+var $d[9]
+var $b[91]
+
+
+// Main Function
+func main()
+    $d[0] = 30
+    $d[1] = 60
+    $d[2] = 50
+    $d[3] = 40
+    $d[4] = 90
+    $d[5] = 10
+    $d[6] = 70
+    $d[7] = 80
+    $d[8] = 20
+    $d[9] = 0
+
+for i = 0 to 9
+    $b[$d[i]] = $d[i] 
+end
+
+for i = 0 to 91
+    if $b[i] == i
+    println $b[i]
+    end
+end
+end
+exit
