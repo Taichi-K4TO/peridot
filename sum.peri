@@ -14,4 +14,3 @@ while n != 0
     println "Enter the next integer value to be added."
     n = input()
 end
-
